@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick.css">
-
+    <link rel="shortcut icon" href="./assets/Images/nutriverse.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
@@ -18,6 +18,11 @@
         <div class="row">
             <div class="col-12 px-md-2 px-2">
                 <section class="row" id="get-started">
+                    
+                    <video  autoplay loop muted id="background-video">
+                        <source src="./assets/Images/nutriverse.mp4">
+                    </video>
+                
                     <div class="col-12 vh-100 p-0">
                         <nav class="navbar navbar-expand-lg custom-nav p-0">
                             <a class="navbar-brand" href="#"><img class="custom-brand-logo" src="./assets/Images/Group 1.svg" alt=""></a>
@@ -106,9 +111,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="row vh-sm-auto vh-100" id="reviews">
+                <section class="row vh-sm-auto min-vh-100" id="reviews">
                     <div class="col-12 py-5 d-flex flex-column justify-content-around">
-                        <h3 class="text-center mb-5">Our <span class="text-primary">Reputation</span>?</h3>
+                        <h3 class="text-center mt-4 mb-5">Our <span class="text-primary">Reputation</span>?</h3>
                         <div class="reviews-container d-flex my-0 my-md-5 pt-5 flex-column justify-content-around  flex-md-row align-items-center">
                             <div class="card review-card">
                                 <div class="text-center">
@@ -154,10 +159,33 @@
                         <p class="text-center">We Established our service at 2012 and served for more than 10k customers.   </p>
 
                     </div>
-                    
+                    <div class="col-12 min-vh-100 fun-facts ">
+                        <div class="fun-facts-container py-3 py-md-5">
+                            <div class="fun-facts-header  mb-md-0 text-center text-white">
+                                <h1>Fun <span class="text-primary">Facts</span></h3>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row p-5 mt-0 mt-md-5 justify-content-around align-items-md-center h-75 h-sm-100">
+                                <div class="fun-fact text-center mb-2 mb-md-0">
+                                    <i class="fas fa-user-friends"></i>
+                                    <p class="countings text-primary">9890</p>
+                                    <p class="tag">Happy Clients</p>
+                                </div>
+                                <div class="fun-fact text-center mb-2 mb-md-0">
+                                    <i class="fas fa-award"></i>
+                                    <p class="countings text-primary">40</p>
+                                    <p class="tag">Awards</p>
+                                </div>
+                                <div class="fun-fact text-center mb-2 mb-md-0">
+                                    <i class="fas fa-store-alt"></i>
+                                    <p class="countings text-primary">50</p>
+                                    <p class="tag">Branches</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="row vh-sm-auto" id="pricing">
-                    <div class="col-12 py-3 d-flex flex-column justify-content-around">
+                    <div class="col-12 pb-3 pt-5 pt-md-0 d-flex flex-column justify-content-around">
                         <div class="d-flex flex-column align-items-center">
                             <div class="vh-100 vh-sm-auto d-flex flex-column justify-content-around">
                                 <div class="">
@@ -173,7 +201,7 @@
                                         <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss. 
                                             <br><br>
                                             They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
-                                        <p><span class="text-primary">$ 40</span> Per Week</p>
+                                        <p><span class="text-primary h5" >$ 40</span> Per Week</p>
                                         <div class="d-flex justify-content-end">
                                             <a href="#" class="btn btn-primary ">Order Now</a> 
                                         </div>
@@ -190,7 +218,7 @@
                                     <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss. 
                                         <br><br>
                                         They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
-                                    <p><span class="text-primary">$ 40</span> Per Week</p>
+                                    <p><span class="text-primary h5">$ 40</span> Per Week</p>
                                     <div class="d-flex justify-content-end">
                                         <a href="#" class="btn btn-primary ">Order Now</a> 
                                     </div>
@@ -212,7 +240,7 @@
                                                     <div class="card-body">
                                                         <h6>Low-fat diets
                                                         </h6>
-                                                        <p class="sm-font"><span class="text-primary">$50</span> per week</p>
+                                                        <p class="sm-font"><span class="text-primary h5">$50</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
                                                             <button class="btn btn-primary">See More</button>
                                                         </div>
@@ -223,7 +251,7 @@
                                                     <div class="card-body">
                                                         <h6>The DASH diet
                                                         </h6>
-                                                        <p class="sm-font"><span class="text-primary">$65</span> per week</p>
+                                                        <p class="sm-font"><span class="text-primary h5">$65</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
                                                             <button class="btn btn-primary">See More</button>
                                                         </div>
@@ -235,7 +263,7 @@
                                                         <h6>Weight Gain Plan
             
                                                         </h6>
-                                                        <p class="sm-font"><span class="text-primary">$100</span> per week</p>
+                                                        <p class="sm-font"><span class="text-primary h5">$100</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
                                                             <button class="btn btn-primary">See More</button>
                                                         </div>
@@ -246,7 +274,7 @@
                                                     <div class="card-body">
                                                         <h6>Low-fat diets
                                                         </h6>
-                                                        <p class="sm-font"><span class="text-primary">$50</span> per week</p>
+                                                        <p class="sm-font"><span class="text-primary h5">$50</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
                                                             <button class="btn btn-primary">See More</button>
                                                         </div>
@@ -257,7 +285,7 @@
                                                     <div class="card-body">
                                                         <h6>The DASH diet
                                                         </h6>
-                                                        <p class="sm-font"><span class="text-primary">$65</span> per week</p>
+                                                        <p class="sm-font"><span class="text-primary h5">$65</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
                                                             <button class="btn btn-primary">See More</button>
                                                         </div>
@@ -269,7 +297,7 @@
                                                         <h6>Weight Gain Plan
             
                                                         </h6>
-                                                        <p class="sm-font"><span class="text-primary">$100</span> per week</p>
+                                                        <p class="sm-font"><span class="text-primary h5">$100</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
                                                             <button class="btn btn-primary">See More</button>
                                                         </div>
@@ -284,40 +312,65 @@
                         </div>
                     </div>
                 </section>
-                <section class="row"></section>
+                
                 <section class="row" id="contact">
-                    <div class="container">
-                        <div class="row pt-5 pb-3 align-items-center">
-                            <div class="col-12 col-md-4 px-4 px-md-0 pb-5 pb-md-0 d-flex flex-column align-item
-                            s-center">
-                                <h4 class="text-white">NUTRIVERSE</h4>
-                                <h1 class="mb-2 text-black-50">Stay In Touch</h1>
-                                <div class="d-flex footer-icon-container">
-                                    <img src="./assets/Images/icons8-facebook-64.png" alt="">
-                                    <img src="./assets/Images/icons8-instagram-logo-64 (1).png" alt="">
-                                    <img src="./assets/Images/icons8-twitter-squared-64.png" alt="">
+                    <div class="container py-md-4">
+                        <div class="row my-4 my-md-5 wow animate__backInDown" style="visibility: visible; animation-name: backInDown;">
+                            <div class="col-12 text-center">
+                                <h3>Contact <span class="text-primary">Us</span></h3>
+                            </div>
+                        </div>
+                        <div class="row flex-row-reverse mb-md-5 " >
+                            <div class="col-12 col-md-6">
+                                <form class="customized-form" action="">
+                                    <input type="text" class="form-control mb-4" placeholder="Name">
+                                    <input type="email" class="form-control mb-4" placeholder="Email">
+                                    <textarea class="form-control mb-4" rows="10">Enter a Message...</textarea>
+                                    <div class="text-right">
+                                        <a href="" class="btn btn-primary">Send Message</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-6 map">
+                                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61081.342059734285!2d96.09508007910158!3d16.896467000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1943e6cdee279%3A0xd1466336be0e7182!2sNEPAS-%20Airport%20Depot%20Office%20(%20National%20Energy%20Puma%20Aviation%20Services)!5e0!3m2!1sen!2ssg!4v1620755185500!5m2!1sen!2ssg" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-footer">
+                        <div class="container pl-4">
+                            <div class="row pt-5 pb-3 align-items-center">
+                                <div class="col-12 col-md-4 px-4 px-md-0 pb-5 pb-md-0 d-flex flex-column align-item
+                                s-center">
+                                    <h4 class="text-white">NUTRIVERSE</h4>
+                                    <h1 class="mb-2 text-black-50">Stay In Touch</h1>
+                                    <div class="d-flex footer-icon-container">
+                                        <img src="./assets/Images/icons8-facebook-64.png" alt="">
+                                        <img src="./assets/Images/icons8-instagram-logo-64 (1).png" alt="">
+                                        <img src="./assets/Images/icons8-twitter-squared-64.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-12 col-md-5 px-4 pb-5 pb-md-0 px-md-0 d-flex flex-column align-item
-                            s-center callable">
-                                <h4 class="text-black-50 mb-4">Get In Touch With Us</h4>
-                                <a href="tel:000-000-0000" class="text-black"><i class="fas fa-phone"></i> &nbsp; 000-000-0000
-                                </a>
-                                <a href="mailto:andydufrense.official@gmail.com" class="text-black"><i class="fas fa-envelope-open"></i> &nbsp; andydufrense.official@gmail.com</a>
-                                <p class="mb-0 text-black mt-1"><i class="fas fa-map-marked"></i> &nbsp; New York, US</p>
-                            </div>
-                            <div class="col-12 col-md-3 px-4 px-md-0  d-flex flex-column align-item
-                            s-center justify-content-center">
-                                <h4 class="text-black-50">Quick Links</h4>
-                                <a class="text-black-50 text-indent-sm" href="#why-rock">Why We Rock!</a>
-                                <a class="text-black-50 text-indent-sm" href="#reviews">Reviews</a>
-                                <a class="text-black-50 text-indent-sm" href="#pricing">Pricing and Plans</a>
-                            </div>
-                            <div class="col-12 px-4 px-md-0">
-                                <div class="d-flex justify-content-between flex-column flex-md-row pt-4">
-                                    <p class="text-black-50">© Copyright 2021. All Rights Reserved</p>
-                                    <p class="text-black-50">Designed by Aphrodite</p>
+                                
+                                <div class="col-12 col-md-5 px-4 pb-5 pb-md-0 px-md-0 d-flex flex-column align-item
+                                s-center callable">
+                                    <h4 class="text-black-50 mb-2">Get In Touch With Us</h4>
+                                    <a href="tel:000-000-0000" class="text-black"><i class="fas fa-phone"></i> &nbsp; 000-000-0000
+                                    </a>
+                                    <a href="mailto:andydufrense.official@gmail.com" class="text-black"><i class="fas fa-envelope-open"></i> &nbsp; andydufrense.official@gmail.com</a>
+                                    <p class="mb-0 text-black mt-1"><i class="fas fa-map-marked"></i> &nbsp; New York, US</p>
+                                </div>
+                                <div class="col-12 col-md-3 px-4 px-md-0  d-flex flex-column align-item
+                                s-center justify-content-center">
+                                    <h4 class="text-black-50">Quick Links</h4>
+                                    <a class="text-black-50 text-indent-sm" href="#get-started">Get Started</a>
+                                    <a class="text-black-50 text-indent-sm" href="#why-rock">Why We Rock!</a>
+                                    <a class="text-black-50 text-indent-sm" href="#reviews">Reviews</a>
+                                    <a class="text-black-50 text-indent-sm" href="#pricing">Pricing and Plans</a>
+                                </div>
+                                <div class="col-12 px-4 px-md-0">
+                                    <div class="d-flex justify-content-between flex-column flex-md-row pt-4">
+                                        <p class="text-black-50">© Copyright 2021. All Rights Reserved</p>
+                                        <p class="text-black-50">Designed by Aphrodite</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -327,8 +380,12 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/JS/jQuery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/JS/way-point.js"></script>
+    <script src="./assets/JS/jquery.counterup.min.js"></script>
+
+
     <script src="./vendor/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./assets/JS/customized-control.js"></script>
 </body>

@@ -55,28 +55,20 @@ body {
   transform: scale(1.03);
 }
 
-/* Background-Photo */
+/* Background-Video */
+#background-video {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 #get-started {
-  background-image: url("../Images/pieces-chicken-fillet-with-mushrooms-stewed-tomato-sauce-with-boiled-broccoli-rice-proper-nutrition-healthy-lifestyle-dietetic-menu-top-view\ \(1\)-min.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
   position: relative;
+  overflow: hidden;
 }
 #get-started::after {
   content: "";
-  background: #403b4a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #e7e9bb,
-    #403b4a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e7e9bb,
-    #403b4a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-color: rgba(0, 0, 0);
   opacity: 0.7;
   position: absolute;
   width: 100%;
@@ -124,8 +116,7 @@ body {
 }
 
 .about-us {
-  background-image: url("../Images/NoPath\ -\ Copy\ \(3\).svg");
-  background-size: cover;
+  background-color: #e8e8e8;
 }
 .flex-img img {
   width: 450px;
@@ -146,7 +137,30 @@ body {
 /* Review */
 #reviews {
   background-color: #f4ede4cb;
+  position: relative;
 }
+#reviews::before,
+#reviews::after {
+  content: "";
+
+  height: 65px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  transform: rotate(-1.75deg);
+}
+#reviews::before {
+  top: 0;
+  margin-top: -35px;
+  background-color: #e8e8e8;
+}
+#reviews::after {
+  bottom: 0px;
+  margin-bottom: -25px;
+  background-color: #fff;
+}
+
 .reviews-container {
   margin-top: 60px !important;
 }
@@ -170,6 +184,60 @@ body {
 .middle {
   margin-top: -180px;
 }
+.fun-facts::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.7;
+}
+.fun-facts {
+  background-image: url("../Images/funfacts.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.fun-facts-header h1 {
+  position: relative;
+}
+.fun-facts-header h1::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background-color: rgb(255, 250, 250) !important;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  border-radius: 10px;
+  margin: auto;
+}
+.fun-facts-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 3;
+}
+.fun-fact {
+  color: rgba(255, 255, 255, 0.795);
+}
+.fun-fact i {
+  font-size: 100px;
+  margin-bottom: 15px;
+}
+.fun-facts .countings {
+  font-size: 40px;
+}
+.fun-facts .tag {
+  font-size: 25px;
+}
 
 /* Plans */
 .plan-img img {
@@ -177,7 +245,8 @@ body {
   height: 350px;
 }
 #pricing {
-  background-color: #e8e8e8;
+  background-image: url("../Images/NoPath\ -\ Copy\ \(3\).svg");
+  background-size: cover;
 }
 .sm-font {
   font-size: 14px;
@@ -201,8 +270,9 @@ body {
 }
 
 /* Footer */
-#contact {
+.contact-footer {
   background-color: #ffb348a9;
+  width: 100%;
 }
 .footer-icon-container img {
   width: 45px;
@@ -221,10 +291,31 @@ body {
 .text-indent-sm {
   text-indent: 5px;
 }
-
+.map {
+  width: 100%;
+  height: 100%;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.navbar-on-scroll {
+  background: #000000c7;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 @media only screen and (max-width: 780px) {
   #get-started {
     background-image: url("../Images/pexels-mikhail-nilov-6740532-min.jpg");
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #background-video {
+    display: none;
   }
   .vh-sm-auto {
     height: auto !important;
@@ -267,6 +358,12 @@ body {
     color: #ecdc4a;
   }
 
+  #reviews::before,
+  #reviews::after {
+    margin-top: -14px;
+    height: 55px;
+    transform: rotate(-1.75deg);
+  }
   .reviews-container {
     margin: auto !important;
   }
@@ -275,6 +372,19 @@ body {
   }
   .review-card {
     margin-bottom: 15px;
+  }
+  .fun-facts-header h1 {
+    font-size: 28px;
+  }
+
+  .fun-fact i {
+    font-size: 28px;
+  }
+  .fun-fact .countings {
+    font-size: 20px;
+  }
+  .fun-fact .tag {
+    font-size: 16px;
   }
   .plan-img {
     width: 100% !important;
@@ -285,5 +395,13 @@ body {
   }
   .text-sm-center {
     text-align: center;
+  }
+  .h-sm-100 {
+    height: 100% !important;
+  }
+  .map {
+    margin: 20px 0px;
+    width: 100%;
+    height: 500px;
   }
 }

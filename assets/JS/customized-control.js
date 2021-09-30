@@ -1,6 +1,8 @@
 // Nav-btn toggle icons
 let nav_btn = document.querySelector(".navbar-toggler");
 let nav_icon = document.querySelector("#nav-icon");
+let nav_bar = document.querySelector(".navbar");
+let client_height = window.screen.height;
 
 nav_icon.addEventListener("click", e => {
     e.preventDefault();
@@ -44,4 +46,16 @@ $('.package-collection').slick({
     ]
   });
                   
-  
+$('.countings').counterUp({
+    delay: 10,
+});
+
+window.onscroll = _ => {
+  let current_height = document.documentElement.scrollTop;
+  if(current_height > client_height - 100){
+    nav_bar.classList.add("navbar-on-scroll");
+  }
+  else{
+    nav_bar.classList.remove("navbar-on-scroll");
+  }
+};
