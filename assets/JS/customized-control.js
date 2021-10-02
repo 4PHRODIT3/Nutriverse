@@ -29,10 +29,10 @@ $('.package-collection').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       {
@@ -59,3 +59,7 @@ window.onscroll = _ => {
     nav_bar.classList.remove("navbar-on-scroll");
   }
 };
+
+window.onload = _ => {
+  document.querySelector('.loader').remove();
+}

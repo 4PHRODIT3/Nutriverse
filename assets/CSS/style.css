@@ -20,6 +20,15 @@ body {
   transform: scale(1.03);
 }
 
+.loader {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
 /* Nav-bar */
 
 .custom-nav {
@@ -58,6 +67,7 @@ body {
 /* Background-Video */
 #background-video {
   width: 100%;
+
   position: absolute;
   top: 0px;
   left: 0px;
@@ -293,7 +303,6 @@ body {
 }
 .map {
   width: 100%;
-  height: 100%;
 }
 .map iframe {
   width: 100%;
@@ -306,11 +315,40 @@ body {
   top: 0;
   left: 0;
 }
-@media only screen and (max-width: 780px) {
+
+/* For mobile phone landscape position */
+@media screen and (max-height: 420px) and (max-width: 900px) {
+  #get-started {
+    background-attachment: unset !important;
+  }
+  .vh-100 {
+    height: 200vh !important;
+  }
+  .d-rotate-row {
+    flex-direction: row !important;
+  }
+  .services .card {
+    width: 50% !important;
+  }
+  .img-rotate img {
+    width: 60% !important ;
+    border-radius: 10px !important;
+  }
+  .img-rotate {
+    text-align: center;
+  }
+  .d-rotate-col {
+    flex-direction: column !important;
+  }
+  #pricing {
+    padding-top: 22px;
+  }
+}
+
+/* For mobile phone and ipad Portrait Position */
+@media only screen and (max-width: 824px) {
   #get-started {
     background-image: url("../Images/pexels-mikhail-nilov-6740532-min.jpg");
-
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -373,6 +411,9 @@ body {
   .review-card {
     margin-bottom: 15px;
   }
+  .fun-facts {
+    background-attachment: scroll;
+  }
   .fun-facts-header h1 {
     font-size: 28px;
   }
@@ -400,8 +441,61 @@ body {
     height: 100% !important;
   }
   .map {
-    margin: 20px 0px;
     width: 100%;
     height: 500px;
+    margin-bottom: 10px;
+  }
+  .package-card {
+    margin-right: 10px !important;
+  }
+  .d-rotate-col {
+    flex-direction: column !important;
+  }
+
+  #pricing {
+    padding-top: 20px;
+  }
+}
+
+/* For ipad Landscape and Portrait */
+@media screen and (min-height: 1000px) {
+  .intro-content {
+    bottom: 200px;
+  }
+
+  .vh-sm-auto {
+    height: auto !important;
+  }
+  #pricing {
+    padding-top: 22px;
+  }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+  #get-started {
+    height: 76vh !important;
+  }
+  .vh-sm-auto {
+    height: auto !important;
+  }
+  #pricing {
+    padding-top: 22px;
+  }
+}
+
+/* For ipad pro Landscape and Portrait */
+@media screen and (min-width: 1366px) and (min-height: 1024px) {
+  #get-started {
+    height: 76vh !important;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  #get-started {
+    height: 42vh !important;
+  }
+  .ios-adjustor {
+    height: 42vh !important;
+  }
+  .ios-adjustor .intro-content {
+    top: 60px;
   }
 }

@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
+    <div class="loader d-flex justify-content-center align-items-center">
+        <img src="./assets/Images/loader.gif" alt="">
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 px-md-2 px-2">
@@ -23,7 +26,7 @@
                         <source src="./assets/Images/nutriverse.mp4">
                     </video>
                 
-                    <div class="col-12 vh-100 p-0">
+                    <div class="col-12 vh-100 ios-adjustor p-0">
                         <nav class="navbar navbar-expand-lg custom-nav p-0">
                             <a class="navbar-brand" href="#"><img class="custom-brand-logo" src="./assets/Images/Group 1.svg" alt=""></a>
                             <button class="navbar-toggler nav-btn" id="nav-btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +44,7 @@
                         <div class="intro-content">
                             <div class="text-success d-flex flex-column align-items-center text-center">
                                 <h1>"Stronger and Healthier"</h1>
-                                <p class="text-low-opacity">&nbsp;Let's boost your health with our nourishing diet  plans!</p>
+                                <p class="text-low-opacity">&nbsp;Let's boost your health with our  diet  plans!</p>
                                 <a href="#pricing" class="btn btn-primary px-4">Let's Explore!</a>
                             </div>
                         </div>
@@ -51,7 +54,7 @@
                 <section class="row min-vh-100" id="why-rock">
                     <div class="col-12 py-5 our-effort vh-sm-auto vh-100">
                         <h3 class="text-center">What You <span class="text-primary">Get</span>?</h3>
-                        <div class="services d-flex flex-column flex-md-row align-items-center justify-content-around">
+                        <div class="services d-flex flex-column d-rotate-col flex-md-row align-items-center justify-content-around">
                             <div class="card shadow-lg ">
                                 <img src="./assets/Images/NoPath - Copy (7).svg" class="card-img" alt="">
                                 <div class="card-body">
@@ -76,9 +79,9 @@
                     </div>
                     <div class="col-12 pt-5 about-us vh-sm-auto vh-100 px-0">
                         <h3 class="text-center mb-5">Why Should You <span class="text-primary">Choose Us</span>?</h3>
-                        <div class="d-flex pt-3 mt-5 flex-column flex-md-row">
+                        <div class="d-flex pt-3 mt-5 flex-column flex-md-row d-rotate-col">
                             <div class="d-flex flex-column justify-content-center w-50 w-100-sm mr-0 mr-md-3 align-items-center">
-                                <div class="flex-img ">
+                                <div class="flex-img img-rotate">
                                     <img src="./assets/Images/breakfast.png" alt="">
                                 </div>
                                 <div class="about-us-content d-flex flex-column align-items-center justify-content-center">
@@ -89,7 +92,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column justify-content-center w-50 w-100-sm align-items-center">
-                                <div class="flex-img ">
+                                <div class="flex-img img-rotate">
                                     <img src="./assets/Images/spicy-curry.png" alt="">
                                 </div>
                                 <div class="about-us-content d-flex flex-column align-items-center justify-content-center">
@@ -106,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center mb-4 mt-md-2 ">
+                        <div class="text-center mb-5 mt-md-2 ">
                             <a href="#reviews" class="btn btn-primary ">Check Some Reviews <i class="fas fa-arrow-right"></i></a> 
                         </div>
                     </div>
@@ -114,7 +117,7 @@
                 <section class="row vh-sm-auto min-vh-100" id="reviews">
                     <div class="col-12 py-5 d-flex flex-column justify-content-around">
                         <h3 class="text-center mt-4 mb-5">Our <span class="text-primary">Reputation</span>?</h3>
-                        <div class="reviews-container d-flex my-0 my-md-5 pt-5 flex-column justify-content-around  flex-md-row align-items-center">
+                        <div class="reviews-container d-rotate-col d-flex my-0 my-md-5 pt-5 flex-column justify-content-around  flex-md-row align-items-center">
                             <div class="card review-card">
                                 <div class="text-center">
                                     <img src="./assets/Images/profile-1.png" alt="">
@@ -164,7 +167,7 @@
                             <div class="fun-facts-header  mb-md-0 text-center text-white">
                                 <h1>Fun <span class="text-primary">Facts</span></h3>
                             </div>
-                            <div class="d-flex flex-column flex-md-row p-5 mt-0 mt-md-5 justify-content-around align-items-md-center h-75 h-sm-100">
+                            <div class="d-flex flex-column flex-md-row d-rotate-row w p-5 mt-0 mt-md-5 justify-content-around align-items-md-center h-75 h-sm-100">
                                 <div class="fun-fact text-center mb-2 mb-md-0">
                                     <i class="fas fa-user-friends"></i>
                                     <p class="countings text-primary">9890</p>
@@ -188,15 +191,15 @@
                     <div class="col-12 pb-3 pt-5 pt-md-0 d-flex flex-column justify-content-around">
                         <div class="d-flex flex-column align-items-center">
                             <div class="vh-100 vh-sm-auto d-flex flex-column justify-content-around">
-                                <div class="">
+                                <div class="mb-md-3">
                                     <h3 class="text-center ">Our <span class="text-primary">Plan</span>?</h3>
                                     <p class="text-center text-muted">Popular Among Customers</p>
                                 </div>
                                 <div class="d-flex justify-content-around flex-column flex-md-row align-items-md-center plan">
-                                    <div class="d-flex align-items-center justify-content-center plan-img w-50">
+                                    <div class="d-flex align-items-center justify-content-center plan-img img-rotate w-50">
                                         <img  src="./assets/Images/plant_based_plan.png" alt="">
                                     </div>
-                                    <div class="w-50 w-100-sm pr-0 mr-0 pr-md-5 mr-md-5 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="w-50 w-100-sm pr-0 mr-0 pr-lg-5 mr-lg-5 d-flex flex-column justify-content-center align-items-center">
                                         <h6>Plant-Based Meal Plan</h6><br>
                                         <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss. 
                                             <br><br>
@@ -210,10 +213,10 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column flex-md-row-reverse justify-content-around plan vh-sm-auto vh-100">
-                                <div class="d-flex align-items-center justify-content-center plan-img w-50 w-100-sm">
+                                <div class="d-flex align-items-center justify-content-center plan-img w-50 img-rotate w-100-sm">
                                     <img  src="./assets/Images/medifast_plan.png" alt="">
                                 </div>
-                                <div class="w-50 w-100-sm pl-0 ml-0 pl-md-5 ml-md-5 align-items-center d-flex flex-column justify-content-center w-100-sm">
+                                <div class="w-50 w-100-sm pl-0 ml-0 pl-lg-5 ml-lg-5 align-items-center d-flex flex-column justify-content-center w-100-sm">
                                     <h6>Plant-Based Meal Plan</h6><br>
                                     <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss. 
                                         <br><br>
@@ -228,7 +231,7 @@
                             <div class="container-fluid ">
                                 <div class="row pt-5 vh-100 vh-sm-auto">
                                     <div class="col-12">
-                                        <div class="col-12 p-4 p-md-0">
+                                        <div class="col-12 p-4 p-md-0 mb-md-3">
                                             <h3 class="text-center ">Other <span class="text-primary">Plans</span>?</h3>
                                         </div>
                                     </div>
@@ -260,7 +263,7 @@
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
                                                     <img src="./assets/Images/weight-gain.png" alt="">
                                                     <div class="card-body">
-                                                        <h6>Weight Gain Plan
+                                                        <h6>Weight Gain
             
                                                         </h6>
                                                         <p class="sm-font"><span class="text-primary h5">$100</span>&nbsp; Per Week</p>
@@ -294,7 +297,7 @@
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
                                                     <img src="./assets/Images/weight-gain.png" alt="">
                                                     <div class="card-body">
-                                                        <h6>Weight Gain Plan
+                                                        <h6>Weight Gain
             
                                                         </h6>
                                                         <p class="sm-font"><span class="text-primary h5">$100</span>&nbsp; Per Week</p>
@@ -355,8 +358,8 @@
                                     <h4 class="text-black-50 mb-2">Get In Touch With Us</h4>
                                     <a href="tel:000-000-0000" class="text-black"><i class="fas fa-phone"></i> &nbsp; 000-000-0000
                                     </a>
-                                    <a href="mailto:andydufrense.official@gmail.com" class="text-black"><i class="fas fa-envelope-open"></i> &nbsp; andydufrense.official@gmail.com</a>
-                                    <p class="mb-0 text-black mt-1"><i class="fas fa-map-marked"></i> &nbsp; New York, US</p>
+                                    <a href="mailto:dufrense.official@gmail.com" class="text-black"><i class="fas fa-envelope-open"></i> &nbsp;dufrense.glob@gmail.com</a>
+                                    <p class="mb-0 text-black mt-1"><i class="fas fa-map-marked"></i> &nbsp;Yangon, Myanmar</p>
                                 </div>
                                 <div class="col-12 col-md-3 px-4 px-md-0  d-flex flex-column align-item
                                 s-center justify-content-center">
