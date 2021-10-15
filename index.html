@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUTRIVERSE: Diet Service</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Nutriverse</title>
+    <meta name="title" content="Nutriverse">
+    <meta name="description" content="Best Diet Food Provider in Mynmar">
+    <meta name="keywords" content="nutriverse diet Myanmar,diet,diet plans,fittness,healthy food,nutriverse diet food,weight gain plan">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nutriverse.netlify.app/">
+    <meta property="og:title" content="Nutriverse">
+    <meta property="og:description" content="Nutriverse is the diet food service-provider in Myanmar. We established in 2012 and served for more than 10K customers.">
+    <meta property="og:image" content="./assets/Images/preview-website.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nutriverse.netlify.app/">
+    <meta property="twitter:title" content="Nutriverse">
+    <meta property="twitter:description" content="Nutriverse is the diet food service-provider in Myanmar. We established in 2012 and served for more than 10K customers.">
+    <meta property="twitter:image" content="./assets/Images/preview-website.png">
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick.css">
     <link rel="shortcut icon" href="./assets/Images/nutriverse.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
+
 <body>
     <div class="loader d-flex justify-content-center align-items-center">
         <img src="./assets/Images/loader.gif" alt="">
@@ -21,102 +46,104 @@
         <div class="row">
             <div class="col-12 px-md-2 px-2">
                 <section class="row" id="get-started">
-                    
-                    <video  autoplay loop muted id="background-video">
+
+                    <video autoplay loop muted id="background-video">
                         <source src="./assets/Images/nutriverse.mp4">
                     </video>
-                
+
                     <div class="col-12 vh-100 ios-adjustor p-0">
-                        <nav class="navbar navbar-expand-lg custom-nav p-0">
-                            <a class="navbar-brand" href="#"><img class="custom-brand-logo" src="./assets/Images/Group 1.svg" alt=""></a>
-                            <button class="navbar-toggler nav-btn" id="nav-btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <i id="nav-icon" class="fas fa-bars text-primary"></i>
+                        <div class="d-flex justify-content-end p-3 nav-open">
+                            <button class="btn btn-outline-secondary" id="nav-open">
+                                <i class="fas fa-bars text-primary"></i>
                             </button>
-                            <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNavAltMarkup">
-                              <div class="navbar-nav custom-nav-link">
-                                <a class="nav-item nav-link" href="#why-rock">Why We Rock!</a>
-                                <a class="nav-item nav-link" href="#reviews">Reviews</a>
-                                <a class="nav-item nav-link" href="#pricing">Pricing & Plans</a>
-                                <a class="nav-item nav-link" href="#contact">Contact Us</a>
-                              </div>
+                        </div>
+                        <nav class="navbar navbar-expand-lg custom-nav p-0">
+                            <div class="d-flex justify-content-between pr-2">
+                                <a class="navbar-brand" href="#"><img class="custom-brand-logo" src="./assets/Images/Group 1.svg" alt=""></a>
+                                <button class="btn btn-sm" id="nav-close" type="button">
+                                    <i id="nav-icon" class="fas fa-times text-primary animate__animated animate__heartBeat" style="animation-duration: 2s ;animation-iteration-count: infinite;"></i>
+                                </button>
+                            </div>
+                            <div class="nav-line-break"></div>
+                            <div class="navbar-collapse justify-content-end align-items-end" id="navbarNavAltMarkup">
+                                <div class="custom-nav-link">
+                                    <a class="nav-item nav-link" href="#why-rock">Why We Rock!</a>
+                                    <a class="nav-item nav-link" href="#reviews">Reviews</a>
+                                    <a class="nav-item nav-link" href="#pricing">Pricing & Plans</a>
+                                    <a class="nav-item nav-link" href="#contact">Contact Us</a>
+                                </div>
                             </div>
                         </nav>
                         <div class="intro-content">
                             <div class="text-success d-flex flex-column align-items-center text-center">
                                 <h1>"Stronger and Healthier"</h1>
-                                <p class="text-low-opacity">&nbsp;Let's boost your health with our  diet  plans!</p>
-                                <a href="#pricing" class="btn btn-primary px-4">Let's Explore!</a>
+                                <p class="text-low-opacity">&nbsp;Let's boost your health with our diet plans!</p>
+                                <a href="tel:000-000-0000" class="btn btn-primary px-4">Contact Now!</a>
                             </div>
                         </div>
-                        
+
                     </div>
                 </section>
                 <section class="row min-vh-100" id="why-rock">
                     <div class="col-12 py-5 our-effort vh-sm-auto vh-100">
-                        <h3 class="text-center">What You <span class="text-primary">Get</span>?</h3>
+                        <h3 class="text-center wow animate__backInDown">What You <span class="text-primary">Get</span>?</h3>
                         <div class="services d-flex flex-column d-rotate-col flex-md-row align-items-center justify-content-around">
-                            <div class="card shadow-lg ">
+                            <div class="card shadow-lg wow animate__bounce" style="animation-duration: 1s;animation-delay: 1s;">
                                 <img src="./assets/Images/NoPath - Copy (7).svg" class="card-img" alt="">
                                 <div class="card-body">
-                                    <p class="text-primary text-center">Personalized  Nutritionist</p>
+                                    <p class="text-primary text-center">Personalized Nutritionist</p>
                                 </div>
                             </div>
-                            <div class="card shadow-lg ">
+                            <div class="card shadow-lg wow animate__bounce" style="animation-duration: 1s;animation-delay: 1s;">
                                 <img src="./assets/Images/NoPath - Copy (8).svg" class="card-img" alt="">
                                 <div class="card-body">
                                     <p class="text-primary text-center">Accurate Delivery Service</p>
                                 </div>
                             </div>
-                            <div class="card shadow-lg ">
+                            <div class="card shadow-lg wow animate__bounce" style="animation-duration: 1s;animation-delay: 1s;">
                                 <img src="./assets/Images/NoPath - Copy (9).svg" class="card-img" alt="">
                                 <div class="card-body">
-                                    <p class="text-primary text-center">Customizable Options &
-                                        Portions For Each Plan
-                                        </p>
+                                    <p class="text-primary text-center">Customizable Options & Portions For Each Plan
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 pt-5 about-us vh-sm-auto vh-100 px-0">
-                        <h3 class="text-center mb-5">Why Should You <span class="text-primary">Choose Us</span>?</h3>
+                        <h3 class="text-center mb-5 wow animate__backInDown">Why Should You <span class="text-primary">Choose Us</span>?</h3>
                         <div class="d-flex pt-3 mt-5 flex-column flex-md-row d-rotate-col">
                             <div class="d-flex flex-column justify-content-center w-50 w-100-sm mr-0 mr-md-3 align-items-center">
-                                <div class="flex-img img-rotate">
-                                    <img src="./assets/Images/breakfast.png" alt="">
+                                <div class="flex-img img-rotate wow animate__swing" style="animation-delay: 1s;">
+                                    <img src="./assets/Images/steak.jpg" alt="">
                                 </div>
                                 <div class="about-us-content d-flex flex-column align-items-center justify-content-center">
                                     <p class="text-center">We create a customized diet plan according to your body type and your taste.
-                                        </p>
+                                    </p>
                                     <p class="text-center">Your personalized nutritionist will help you to understand about diet, calorie and metabolism.
-                                        </p>
+                                    </p>
                                 </div>
                             </div>
                             <div class="d-flex flex-column justify-content-center w-50 w-100-sm align-items-center">
-                                <div class="flex-img img-rotate">
-                                    <img src="./assets/Images/spicy-curry.png" alt="">
+                                <div class="flex-img img-rotate wow animate__swing" style="animation-delay: 1s;">
+                                    <img src="./assets/Images/protein-diet.jpg" alt="">
                                 </div>
                                 <div class="about-us-content d-flex flex-column align-items-center justify-content-center">
-                                    <p class="text-center">We serve three meals a day, 
-                                        ensuring that the meals are fresh 
-                                        and delivered at the accurate 
-                                        time and location.
-                                        </p>
-                                    <p class="text-center">Following up  your progress and 
-                                        tweaks and tailors your diet, 
-                                        we will adjust the various kinds of diet.
-                                        
-                                        </p>
+                                    <p class="text-center">We serve three meals a day, ensuring that the meals are fresh and delivered at the accurate time and location.
+                                    </p>
+                                    <p class="text-center">Following up your progress and tweaks and tailors your diet, we will adjust the various kinds of diet.
+
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center mb-5 mt-md-2 ">
-                            <a href="#reviews" class="btn btn-primary ">Check Some Reviews <i class="fas fa-arrow-right"></i></a> 
+                            <a href="#reviews" class="btn btn-primary ">Check Some Reviews <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </section>
                 <section class="row vh-sm-auto min-vh-100" id="reviews">
                     <div class="col-12 py-5 d-flex flex-column justify-content-around">
-                        <h3 class="text-center mt-4 mb-5">Our <span class="text-primary">Reputation</span>?</h3>
+                        <h3 class="text-center mt-4 mb-5 wow animate__backInDown">Our <span class="text-primary">Reputation</span>?</h3>
                         <div class="reviews-container d-rotate-col d-flex my-0 my-md-5 pt-5 flex-column justify-content-around  flex-md-row align-items-center">
                             <div class="card review-card">
                                 <div class="text-center">
@@ -135,9 +162,8 @@
                                     <img src="./assets/Images/profile-2.png" alt="">
                                 </div>
                                 <div class="card-body text-center d-flex flex-column justify-content-center">
-                                    <h6>“I've lost 9 kgs in 2 months! Sustained weight loss, heightened 
-                                        confidence, mother-like customer service. It’s a bargain.”
-                                        
+                                    <h6>“I've lost 9 kgs in 2 months! Sustained weight loss, heightened confidence, mother-like customer service. It’s a bargain.”
+
                                     </h6>
                                     <p>ZEENIA WADIA, 29
 
@@ -159,12 +185,13 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-center">We Established our service at 2012 and served for more than 10k customers.   </p>
+                        <br>
+                        <p class="text-center">We Established our service at 2012 and served for more than 10k customers. </p>
 
                     </div>
                     <div class="col-12 min-vh-100 fun-facts ">
                         <div class="fun-facts-container py-3 py-md-5">
-                            <div class="fun-facts-header  mb-md-0 text-center text-white">
+                            <div class="fun-facts-header wow animate__backInDown mb-md-0 text-center text-white">
                                 <h1>Fun <span class="text-primary">Facts</span></h3>
                             </div>
                             <div class="d-flex flex-column flex-md-row d-rotate-row w p-5 mt-0 mt-md-5 justify-content-around align-items-md-center h-75 h-sm-100">
@@ -192,46 +219,44 @@
                         <div class="d-flex flex-column align-items-center">
                             <div class="vh-100 vh-sm-auto d-flex flex-column justify-content-around">
                                 <div class="mb-md-3">
-                                    <h3 class="text-center ">Our <span class="text-primary">Plan</span>?</h3>
+                                    <h3 class="text-center wow animate__backInDown">Our <span class="text-primary">Plan</span>?</h3>
                                     <p class="text-center text-muted">Popular Among Customers</p>
                                 </div>
                                 <div class="d-flex justify-content-around flex-column flex-md-row align-items-md-center plan">
                                     <div class="d-flex align-items-center justify-content-center plan-img img-rotate w-50">
-                                        <img  src="./assets/Images/plant_based_plan.png" alt="">
+                                        <img src="./assets/Images/plant-based-diet.jpg" alt="">
                                     </div>
                                     <div class="w-50 w-100-sm pr-0 mr-0 pr-lg-5 mr-lg-5 d-flex flex-column justify-content-center align-items-center">
                                         <h6>Plant-Based Meal Plan</h6><br>
-                                        <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss. 
-                                            <br><br>
-                                            They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
-                                        <p><span class="text-primary h5" >$ 40</span> Per Week</p>
+                                        <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss.
+                                            <br><br> They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
+                                        <p><span class="text-primary h5">$ 40</span> Per Week</p>
                                         <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-primary ">Order Now</a> 
+                                            <a href="#" class="btn btn-primary ">Order Now</a>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="d-flex flex-column flex-md-row-reverse justify-content-around plan vh-sm-auto vh-100">
                                 <div class="d-flex align-items-center justify-content-center plan-img w-50 img-rotate w-100-sm">
-                                    <img  src="./assets/Images/medifast_plan.png" alt="">
+                                    <img src="./assets/Images/protein-based-diet.jpg" alt="">
                                 </div>
                                 <div class="w-50 w-100-sm pl-0 ml-0 pl-lg-5 ml-lg-5 align-items-center d-flex flex-column justify-content-center w-100-sm">
-                                    <h6>Plant-Based Meal Plan</h6><br>
-                                    <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss. 
-                                        <br><br>
-                                        They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
-                                    <p><span class="text-primary h5">$ 40</span> Per Week</p>
+                                    <h6>Protein-Based Meal Plan</h6><br>
+                                    <p class="text-black-50 text-sm-center">If you're looking for a protein-based meal delivery program, we provides different kinds of plans for improved health and weight loss.
+                                        <br><br> They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
+                                    <p><span class="text-primary h5">$ 100</span> Per Week</p>
                                     <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn-primary ">Order Now</a> 
+                                        <a href="#" class="btn btn-primary ">Order Now</a>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="container-fluid ">
                                 <div class="row pt-5 vh-100 vh-sm-auto">
                                     <div class="col-12">
-                                        <div class="col-12 p-4 p-md-0 mb-md-3">
+                                        <div class="col-12 p-4 p-md-0 mb-md-3 wow animate__backInDown">
                                             <h3 class="text-center ">Other <span class="text-primary">Plans</span>?</h3>
                                         </div>
                                     </div>
@@ -239,7 +264,7 @@
                                         <div class="container">
                                             <div class="row package-collection">
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
-                                                    <img src="./assets/Images/low-fat-diet.png" alt="">
+                                                    <img src="./assets/Images/low-fat-diet.jpg" alt="">
                                                     <div class="card-body">
                                                         <h6>Low-fat diets
                                                         </h6>
@@ -250,7 +275,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
-                                                    <img src="./assets/Images/dash_diet.png" alt="">
+                                                    <img src="./assets/Images/dash-diet.jpg" alt="">
                                                     <div class="card-body">
                                                         <h6>The DASH diet
                                                         </h6>
@@ -261,10 +286,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
-                                                    <img src="./assets/Images/weight-gain.png" alt="">
+                                                    <img src="./assets/Images/weight-gain-diet.jpg" alt="">
                                                     <div class="card-body">
                                                         <h6>Weight Gain
-            
+
                                                         </h6>
                                                         <p class="sm-font"><span class="text-primary h5">$100</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
@@ -273,7 +298,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
-                                                    <img src="./assets/Images/low-fat-diet.png" alt="">
+                                                    <img src="./assets/Images/low-fat-diet.jpg" alt="">
                                                     <div class="card-body">
                                                         <h6>Low-fat diets
                                                         </h6>
@@ -284,7 +309,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
-                                                    <img src="./assets/Images/dash_diet.png" alt="">
+                                                    <img src="./assets/Images/dash-diet.jpg" alt="">
                                                     <div class="card-body">
                                                         <h6>The DASH diet
                                                         </h6>
@@ -295,10 +320,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
-                                                    <img src="./assets/Images/weight-gain.png" alt="">
+                                                    <img src="./assets/Images/weight-gain-diet.jpg" alt="">
                                                     <div class="card-body">
                                                         <h6>Weight Gain
-            
+
                                                         </h6>
                                                         <p class="sm-font"><span class="text-primary h5">$100</span>&nbsp; Per Week</p>
                                                         <div class="text-right">
@@ -315,7 +340,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <section class="row" id="contact">
                     <div class="container py-md-4">
                         <div class="row my-4 my-md-5 wow animate__backInDown" style="visibility: visible; animation-name: backInDown;">
@@ -323,9 +348,9 @@
                                 <h3>Contact <span class="text-primary">Us</span></h3>
                             </div>
                         </div>
-                        <div class="row flex-row-reverse mb-md-5 " >
+                        <div class="row flex-row-reverse mb-md-5 ">
                             <div class="col-12 col-md-6">
-                                <form class="customized-form" action="">
+                                <form class="customized-form mb-3 mb-md-0" action="">
                                     <input type="text" class="form-control mb-4" placeholder="Name">
                                     <input type="email" class="form-control mb-4" placeholder="Email">
                                     <textarea class="form-control mb-4" rows="10">Enter a Message...</textarea>
@@ -335,7 +360,8 @@
                                 </form>
                             </div>
                             <div class="col-12 col-md-6 map">
-                                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61081.342059734285!2d96.09508007910158!3d16.896467000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1943e6cdee279%3A0xd1466336be0e7182!2sNEPAS-%20Airport%20Depot%20Office%20(%20National%20Energy%20Puma%20Aviation%20Services)!5e0!3m2!1sen!2ssg!4v1620755185500!5m2!1sen!2ssg" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61081.342059734285!2d96.09508007910158!3d16.896467000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1943e6cdee279%3A0xd1466336be0e7182!2sNEPAS-%20Airport%20Depot%20Office%20(%20National%20Energy%20Puma%20Aviation%20Services)!5e0!3m2!1sen!2ssg!4v1620755185500!5m2!1sen!2ssg"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
@@ -345,34 +371,34 @@
                                 <div class="col-12 col-md-4 px-4 px-md-0 pb-5 pb-md-0 d-flex flex-column align-item
                                 s-center">
                                     <h4 class="text-white">NUTRIVERSE</h4>
-                                    <h1 class="mb-2 text-black-50">Stay In Touch</h1>
+                                    <h1 class="mb-2 ">Stay In Touch</h1>
                                     <div class="d-flex footer-icon-container">
                                         <img src="./assets/Images/icons8-facebook-64.png" alt="">
                                         <img src="./assets/Images/icons8-instagram-logo-64 (1).png" alt="">
                                         <img src="./assets/Images/icons8-twitter-squared-64.png" alt="">
                                     </div>
                                 </div>
-                                
-                                <div class="col-12 col-md-5 px-4 pb-5 pb-md-0 px-md-0 d-flex flex-column align-item
+
+                                <div class="col-12 col-md-5 px-4 pb-5 pb-md-0 px-md-0 p-lg-5 d-flex flex-column align-item
                                 s-center callable">
-                                    <h4 class="text-black-50 mb-2">Get In Touch With Us</h4>
+                                    <h4 class=" mb-2">Get In Touch With Us</h4>
                                     <a href="tel:000-000-0000" class="text-black"><i class="fas fa-phone"></i> &nbsp; 000-000-0000
                                     </a>
                                     <a href="mailto:dufrense.official@gmail.com" class="text-black"><i class="fas fa-envelope-open"></i> &nbsp;dufrense.glob@gmail.com</a>
                                     <p class="mb-0 text-black mt-1"><i class="fas fa-map-marked"></i> &nbsp;Yangon, Myanmar</p>
                                 </div>
-                                <div class="col-12 col-md-3 px-4 px-md-0  d-flex flex-column align-item
-                                s-center justify-content-center">
-                                    <h4 class="text-black-50">Quick Links</h4>
-                                    <a class="text-black-50 text-indent-sm" href="#get-started">Get Started</a>
-                                    <a class="text-black-50 text-indent-sm" href="#why-rock">Why We Rock!</a>
-                                    <a class="text-black-50 text-indent-sm" href="#reviews">Reviews</a>
-                                    <a class="text-black-50 text-indent-sm" href="#pricing">Pricing and Plans</a>
+                                <div class="col-12 col-md-3 px-4 px-md-0 p-lg-4  d-flex flex-column align-item
+                                s-center justify-content-center py-md-0">
+                                    <h4 class="">Quick Links</h4>
+                                    <a class="text-dark text-indent-sm" href="#get-started">Get Started</a>
+                                    <a class="text-dark text-indent-sm" href="#why-rock">Why We Rock!</a>
+                                    <a class="text-dark text-indent-sm" href="#reviews">Reviews</a>
+                                    <a class="text-dark text-indent-sm" href="#pricing">Pricing and Plans</a>
                                 </div>
                                 <div class="col-12 px-4 px-md-0">
                                     <div class="d-flex justify-content-between flex-column flex-md-row pt-4">
-                                        <p class="text-black-50">© Copyright 2021. All Rights Reserved</p>
-                                        <p class="text-black-50">Designed by Aphrodite</p>
+                                        <p class="">© Copyright 2021. All Rights Reserved</p>
+                                        <p class="">Designed by Aphrodite</p>
                                     </div>
                                 </div>
                             </div>
@@ -383,13 +409,15 @@
         </div>
     </div>
 
-    <script src="./assets/JS/jQuery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/JS/jQuery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./assets/JS/way-point.js"></script>
+    <script src="./assets/JS/way-point.min.js"></script>
     <script src="./assets/JS/jquery.counterup.min.js"></script>
 
 
     <script src="./vendor/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./assets/JS/customized-control.js"></script>
 </body>
+
 </html>
