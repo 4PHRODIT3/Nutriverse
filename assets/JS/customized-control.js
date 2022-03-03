@@ -31,7 +31,7 @@ $('.package-collection').slick({
             }
         },
         {
-            breakpoint: 800,
+            breakpoint: 830,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
@@ -86,7 +86,6 @@ wow.init();
 const setActive = id => {
 
     $(".nav-link").removeClass("active");
-    console.log($(`nav-link[href='#${id}']`));
     $(`.nav-link[href='#${id}']`).addClass("active");
 
 }

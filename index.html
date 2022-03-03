@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="./vendor/slick-1.8.1/slick/slick.css">
     <link rel="shortcut icon" href="./assets/Images/nutriverse.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/style.min.css">
 </head>
 
 <body>
@@ -46,14 +46,13 @@
         <div class="row">
             <div class="col-12 px-md-2 px-2">
                 <section class="row" id="get-started">
-
                     <video autoplay loop muted id="background-video">
                         <source src="./assets/Images/nutriverse.mp4">
                     </video>
 
                     <div class="col-12 vh-100 ios-adjustor p-0">
                         <div class="d-flex justify-content-end p-3 nav-open">
-                            <button class="btn btn-outline-secondary" id="nav-open">
+                            <button class="btn btn-transparent" id="nav-open">
                                 <i class="fas fa-bars text-primary"></i>
                             </button>
                         </div>
@@ -75,19 +74,19 @@
                             </div>
                         </nav>
                         <div class="intro-content">
-                            <div class="text-success d-flex flex-column align-items-center text-center">
-                                <h1>"Stronger and Healthier"</h1>
-                                <p class="text-low-opacity">&nbsp;Let's boost your health with our diet plans!</p>
-                                <a href="tel:000-000-0000" class="btn btn-primary px-4">Contact Now!</a>
+                            <div class="text-success d-flex flex-column align-items-center text-center unique">
+                                <h1 class="mb-3 mb-lg-4">"Stronger and Healthier"</h1>
+                                <p class="text-low-opacity mb-3 mb-lg-4 mb-xl-5">&nbsp;Let's boost your health with our diet plans!</p>
+                                <a href="tel:000-000-0000" class="btn btn-primary px-4  text-danger">Contact Now!</a>
                             </div>
                         </div>
 
                     </div>
                 </section>
                 <section class="row min-vh-100" id="why-rock">
-                    <div class="col-12 py-5 our-effort vh-sm-auto vh-100">
-                        <h3 class="text-center wow animate__backInDown">What You <span class="text-primary">Get</span>?</h3>
-                        <div class="services d-flex flex-column d-rotate-col flex-md-row align-items-center justify-content-around">
+                    <div class="col-12 py-5 our-effort">
+                        <h3 class="text-center wow animate__backInDown">What You <span class="text-danger">Get</span>?</h3>
+                        <div class="services d-flex flex-column d-rotate-col flex-md-row align-items-center justify-content-around py-3">
                             <div class="card shadow-lg wow animate__bounce" style="animation-duration: 1s;animation-delay: 1s;">
                                 <img src="./assets/Images/NoPath - Copy (7).svg" class="card-img" alt="">
                                 <div class="card-body">
@@ -109,9 +108,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 pt-5 about-us vh-sm-auto vh-100 px-0">
-                        <h3 class="text-center mb-5 wow animate__backInDown">Why Should You <span class="text-primary">Choose Us</span>?</h3>
-                        <div class="d-flex pt-3 mt-5 flex-column flex-md-row d-rotate-col">
+                    <div class="col-12 pt-5 about-us vh-sm-auto px-0">
+                        <h3 class="text-center mb-5 wow animate__backInDown">Why Should You <span class="text-danger">Choose Us</span>?</h3>
+                        <div class="d-flex px-3 pt-3 mt-5 flex-column flex-md-row d-rotate-col">
                             <div class="d-flex flex-column justify-content-center w-50 w-100-sm mr-0 mr-md-3 align-items-center">
                                 <div class="flex-img img-rotate wow animate__swing" style="animation-delay: 1s;">
                                     <img src="./assets/Images/steak.jpg" alt="">
@@ -141,9 +140,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="row vh-sm-auto min-vh-100" id="reviews">
+                <section class="row vh-sm-auto" id="reviews">
                     <div class="col-12 py-5 d-flex flex-column justify-content-around">
-                        <h3 class="text-center mt-4 mb-5 wow animate__backInDown">Our <span class="text-primary">Reputation</span>?</h3>
+                        <h3 class="text-center mt-4 mb-5 wow animate__backInDown">Our <span class="text-danger">Reputation</span>?</h3>
                         <div class="reviews-container d-rotate-col d-flex my-0 my-md-5 pt-5 flex-column justify-content-around  flex-md-row align-items-center">
                             <div class="card review-card">
                                 <div class="text-center">
@@ -192,7 +191,7 @@
                     <div class="col-12 min-vh-100 fun-facts ">
                         <div class="fun-facts-container py-3 py-md-5">
                             <div class="fun-facts-header wow animate__backInDown mb-md-0 text-center text-white">
-                                <h1>Fun <span class="text-primary">Facts</span></h3>
+                                <h1>Fun <span class="text-danger">Facts</span></h3>
                             </div>
                             <div class="d-flex flex-column flex-md-row d-rotate-row w p-5 mt-0 mt-md-5 justify-content-around align-items-md-center h-75 h-sm-100">
                                 <div class="fun-fact text-center mb-2 mb-md-0">
@@ -215,52 +214,52 @@
                     </div>
                 </section>
                 <section class="row vh-sm-auto" id="pricing">
-                    <div class="col-12 pb-3 pt-5 pt-md-0 d-flex flex-column justify-content-around">
+                    <div class="col-12 pb-3 pt-lg-3 pt-md-0 d-flex flex-column justify-content-around">
                         <div class="d-flex flex-column align-items-center">
-                            <div class="vh-100 vh-sm-auto d-flex flex-column justify-content-around">
-                                <div class="mb-md-3">
-                                    <h3 class="text-center wow animate__backInDown">Our <span class="text-primary">Plan</span>?</h3>
+                            <div class="vh-sm-auto d-flex flex-column justify-content-around">
+                                <div class="my-3 my-md-3 mb-md-5">
+                                    <h3 class="text-center wow animate__backInDown">Our <span class="text-danger">Plan</span>?</h3>
                                     <p class="text-center text-muted">Popular Among Customers</p>
                                 </div>
-                                <div class="d-flex justify-content-around flex-column flex-md-row align-items-md-center plan">
-                                    <div class="d-flex align-items-center justify-content-center plan-img img-rotate w-50">
-                                        <img src="./assets/Images/plant-based-diet.jpg" alt="">
+                                <div class="row py-5 px-3 px-md-5 px-lg-0">
+                                    <div class="col-12 col-lg-6 plan-img img-rotate d-flex justify-content-center justify-content-lg-end px-0 px-lg-5">
+                                        <img class="img-ctrl" src="./assets/Images/plant-based-diet.jpg" alt="">
                                     </div>
-                                    <div class="w-50 w-100-sm pr-0 mr-0 pr-lg-5 mr-lg-5 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="col-12 col-lg-6 d-flex  px-0 px-lg-5  flex-column justify-content-center align-items-center align-items-lg-start">
                                         <h6>Plant-Based Meal Plan</h6><br>
-                                        <p class="text-black-50 text-sm-center">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss.
-                                            <br><br> They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
+                                        <p class="text-black-50 w-50 w-75-md w-sm-100">If you're looking for a vegan or vegetarian meal delivery program, we provides a wide range of plant-based meals for improved health and weight loss.
+                                            They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
                                         <p><span class="text-primary h5">$ 40</span> Per Week</p>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-primary ">Order Now</a>
+                                        <div class=""><button href="#" class="btn btn-primary ">Order Now</button></div>
+                                    </div>
+                                    <div class="col-12" style="height: 100px;"></div>
+                                    <div class="col-12 col-lg-6 plan-img img-rotate d-flex justify-content-center px-0 px-lg-5 d-block d-lg-none">
+                                        <img class="img-ctrl" src="./assets/Images/protein-based-diet.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="col-12 col-lg-6 d-flex  px-0 px-lg-5  flex-column justify-content-center align-items-center align-items-lg-end">
+                                        <div class="w-50 w-75-md w-sm-100 d-flex flex-column align-items-center align-items-lg-start pl-0 px-xl-5">
+                                            <h6>Protein-Based Meal Plan</h6><br>
+                                            <p class="text-black-50 ">If you're looking for a protein-based meal delivery program, we provides different kinds of plans for improved health and weight loss.
+                                                They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
+                                            <p><span class="text-primary h5">$ 100</span> Per Week</p>
+                                            <div class=""><button href="#" class="btn btn-primary ">Order Now</button></div>
                                         </div>
                                     </div>
-
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row-reverse justify-content-around plan vh-sm-auto vh-100">
-                                <div class="d-flex align-items-center justify-content-center plan-img w-50 img-rotate w-100-sm">
-                                    <img src="./assets/Images/protein-based-diet.jpg" alt="">
-                                </div>
-                                <div class="w-50 w-100-sm pl-0 ml-0 pl-lg-5 ml-lg-5 align-items-center d-flex flex-column justify-content-center w-100-sm">
-                                    <h6>Protein-Based Meal Plan</h6><br>
-                                    <p class="text-black-50 text-sm-center">If you're looking for a protein-based meal delivery program, we provides different kinds of plans for improved health and weight loss.
-                                        <br><br> They use basic organic ingredients and no preservatives. The food is not highly-processed. They also offer gluten-free meals.</p>
-                                    <p><span class="text-primary h5">$ 100</span> Per Week</p>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#" class="btn btn-primary ">Order Now</a>
+                                    <div class="col-12 col-lg-6 plan-img img-rotate justify-content-start px-0 px-lg-5 d-lg-flex  d-none">
+                                        <img class="" src="./assets/Images/protein-based-diet.jpg" alt="">
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="container-fluid ">
-                                <div class="row pt-5 vh-100 vh-sm-auto">
+                        
+                            <div class="container-fluid">
+                                <div class="row pt-5 pb-3 vh-sm-auto">
                                     <div class="col-12">
-                                        <div class="col-12 p-4 p-md-0 mb-md-3 wow animate__backInDown">
-                                            <h3 class="text-center ">Other <span class="text-primary">Plans</span>?</h3>
+                                        <div class="col-12 p-4 p-md-0 my-md-5 wow animate__backInDown">
+                                            <h3 class="text-center ">Other <span class="text-danger">Plans</span>?</h3>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 mt-5">
                                         <div class="container">
                                             <div class="row package-collection">
                                                 <div class="card col-12 col-md-4 mr-0 mr-md-5 package-card">
@@ -345,10 +344,10 @@
                     <div class="container py-md-4">
                         <div class="row my-4 my-md-5 wow animate__backInDown" style="visibility: visible; animation-name: backInDown;">
                             <div class="col-12 text-center">
-                                <h3>Contact <span class="text-primary">Us</span></h3>
+                                <h3>Contact <span class="text-danger">Us</span></h3>
                             </div>
                         </div>
-                        <div class="row flex-row-reverse mb-md-5 ">
+                        <div class="row flex-row-reverse my-md-5">
                             <div class="col-12 col-md-6">
                                 <form class="customized-form mb-3 mb-md-0" action="">
                                     <input type="text" class="form-control mb-4" placeholder="Name">
@@ -397,8 +396,8 @@
                                 </div>
                                 <div class="col-12 px-4 px-md-0">
                                     <div class="d-flex justify-content-between flex-column flex-md-row pt-4">
-                                        <p class="">© Copyright 2021. All Rights Reserved</p>
-                                        <p class="">Designed by Aphrodite</p>
+                                        <p class="">&copy;&nbsp;Copyright 2022. All Rights Reserved</p>
+                                        <p class="">Designed by Rinn</p>
                                     </div>
                                 </div>
                             </div>
